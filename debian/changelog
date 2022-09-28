@@ -1,0 +1,35 @@
+felix-gogo-shell (0.12.0-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 13:42:06 +0100
+
+felix-gogo-shell (0.12.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * Imported Upstream version 0.12.0.
+  * Use compat level 9 and require debhelper >= 9.
+  * wrap-and-sort -sa.
+  * Declare compliance with Debian Policy 3.9.6.
+  * Use canonical Vcs-URI.
+  * Switch from cdbs to dh sequencer.
+  * Update get-orig-source target and use --no-symlink option.
+
+ -- Markus Koschany <apo@debian.org>  Sat, 21 Nov 2015 18:16:05 +0100
+
+felix-gogo-shell (0.10.0-2) unstable; urgency=low
+
+  * Team upload.
+  * Install JAR into /usr/share/java to comply with policy.
+    (Closes: #689472)
+  * Bump Standards-Version to 3.9.4. No changes were required.
+  * Update Format field in copyright file.
+
+ -- tony mancill <tmancill@debian.org>  Tue, 02 Oct 2012 23:14:04 -0700
+
+felix-gogo-shell (0.10.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #647937).
+
+ -- Damien Raude-Morvan <drazzib@debian.org>  Mon, 07 Nov 2011 22:26:55 +0100

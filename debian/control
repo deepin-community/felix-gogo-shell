@@ -1,0 +1,59 @@
+Source: felix-gogo-shell
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Damien Raude-Morvan <drazzib@debian.org>
+Build-Depends:
+ debhelper (>= 9),
+ default-jdk,
+ default-jdk-doc,
+ libfelix-gogo-runtime-java,
+ libfelix-gogo-runtime-java-doc,
+ libmaven-bundle-plugin-java,
+ libmaven-javadoc-plugin-java,
+ libosgi-compendium-java,
+ libosgi-compendium-java-doc,
+ libosgi-core-java,
+ libosgi-core-java-doc,
+ libsurefire-java,
+ maven-debian-helper
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-java/felix-gogo-shell.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-java/felix-gogo-shell.git
+Homepage: http://felix.apache.org/site/apache-felix-gogo.html
+
+Package: libfelix-gogo-shell-java
+Architecture: all
+Depends:
+ ${maven:Depends},
+ ${misc:Depends}
+Recommends:
+ ${maven:OptionalDepends}
+Suggests:
+ libfelix-gogo-shell-java-doc
+Description: Apache Felix Gogo Shell bundle
+ Apache Felix Gogo is a subproject of Apache Felix implementing the OSGi
+ RFC 147, which describes a standard shell for OSGi-based environments.
+ .
+ Shell bundle of Gogo subproject provides a simple textual user interface
+ to interact with the command processor.
+
+Package: libfelix-gogo-shell-java-doc
+Architecture: all
+Section: doc
+Depends:
+ ${maven:DocDepends},
+ ${misc:Depends}
+Recommends:
+ ${maven:DocOptionalDepends}
+Suggests:
+ libfelix-gogo-shell-java
+Description: Documentation for Apache Felix Gogo Shell bundle
+ Apache Felix Gogo is a subproject of Apache Felix implementing the OSGi
+ RFC 147, which describes a standard shell for OSGi-based environments.
+ .
+ Shell bundle of Gogo subproject provides a simple textual user interface
+ to interact with the command processor.
+ .
+ This package contains the API documentation of libfelix-gogo-shell-java.
